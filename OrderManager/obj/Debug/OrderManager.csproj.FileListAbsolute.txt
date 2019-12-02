@@ -1,0 +1,9 @@
+C:\Users\ratis\source\repos\OrderManager\OrderManager\bin\Debug\OrderManager.exe.config
+C:\Users\ratis\source\repos\OrderManager\OrderManager\bin\Debug\OrderManager.exe
+C:\Users\ratis\source\repos\OrderManager\OrderManager\bin\Debug\OrderManager.pdb
+C:\Users\ratis\source\repos\OrderManager\OrderManager\obj\Debug\OrderManager.csprojAssemblyReference.cache
+C:\Users\ratis\source\repos\OrderManager\OrderManager\obj\Debug\OrderManager.exe
+C:\Users\ratis\source\repos\OrderManager\OrderManager\obj\Debug\OrderManager.pdb
+C:\Users\ratis\source\repos\OrderManager\OrderManager\bin\Debug\DatabaseHelper.dll
+C:\Users\ratis\source\repos\OrderManager\OrderManager\bin\Debug\DatabaseHelper.pdb
+C:\Users\ratis\source\repos\OrderManager\OrderManager\obj\Debug\OrderManager.csproj.CopyComplete
