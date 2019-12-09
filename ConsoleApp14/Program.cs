@@ -7,6 +7,7 @@ using DatabaseHelper;
 using System.Data.SqlClient;
 using System.Data;
 using System.IO;
+using System.Transactions;
 using System.Configuration;
 
 namespace ConsoleApp14
@@ -16,23 +17,36 @@ namespace ConsoleApp14
         static void Main(string[] args)
         {
             string dataFile = @"C:\Users\ratis\Desktop\products.txt";
-            string data = null;
+            //string data = null;
             using (var fileReader = new StreamReader(new FileStream(dataFile, FileMode.Open)))
             {
                 string line;
-                while (!fileReader.EndOfStream)
+                //var objTrans = new SqlTransaction();
+                using (var transaction = new TransactionScope())
                 {
-                    //data = File.ReadAllText(dataFile);
-                    line = fileReader.ReadLine();
-                    string[] words = line.Split("\t".ToCharArray());
+                    try
+                    {
+                        while (!fileReader.EndOfStream)
+                        {
+                            //data = File.ReadAllText(dataFile);
+                            line = fileReader.ReadLine();
+                            string[] words = line.Split("\t".ToCharArray());
 
-                    Database db = new Database();
-                    db.ExecuteNonQuery("InsertData_sp", CommandType.StoredProcedure,
-                        new SqlParameter("Category", words[0]),
-                        new SqlParameter("Id", words[1]),
-                        new SqlParameter("Name", words[2]),
-                        new SqlParameter("Price", words[3])
-                    );
+                            Database db = new Database();
+                            db.ExecuteNonQuery("InsertData_sp", CommandType.StoredProcedure,
+                                new SqlParameter("Category", words[0]),
+                                new SqlParameter("Id", words[1]),
+                                new SqlParameter("Name", words[2]),
+                                new SqlParameter("Price", words[3])
+                            );
+                        }
+                        transaction.Complete();
+                    }
+                    catch(Exception e)
+                    {
+                        Console.WriteLine("Rollbacking changes, reason: " + e.Message);
+                        transaction.Dispose();
+                    }
                 }
             }
             Console.ReadKey();
