@@ -1,0 +1,11 @@
+C:\Users\gchok\source\repos\ConsoleApp14\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+C:\Users\gchok\source\repos\ConsoleApp14\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+C:\Users\gchok\source\repos\ConsoleApp14\DatabaseHelper\obj\Debug\DatabaseHelper.csprojAssemblyReference.cache
+C:\Users\gchok\source\repos\ConsoleApp14\DatabaseHelper\obj\Debug\DatabaseHelper.csproj.CoreCompileInputs.cache
+C:\Users\gchok\source\repos\ConsoleApp14\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+C:\Users\gchok\source\repos\ConsoleApp14\DatabaseHelper\obj\Debug\DatabaseHelper.pdb
+C:\Users\ratis\Desktop\ConsoleApp14\DatabaseHelper\bin\Debug\DatabaseHelper.dll
+C:\Users\ratis\Desktop\ConsoleApp14\DatabaseHelper\bin\Debug\DatabaseHelper.pdb
+C:\Users\ratis\Desktop\ConsoleApp14\DatabaseHelper\obj\Debug\DatabaseHelper.csprojAssemblyReference.cache
+C:\Users\ratis\Desktop\ConsoleApp14\DatabaseHelper\obj\Debug\DatabaseHelper.dll
+C:\Users\ratis\Desktop\ConsoleApp14\DatabaseHelper\obj\Debug\DatabaseHelper.pdb
